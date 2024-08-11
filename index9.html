@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Elements</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: lightyellow;
+        color: black;
+    }
+    header, footer {
+        background-color: darkblue;
+        color: white;
+        padding: 10px;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    section {
+        padding: 20px;
+        background-color: white;
+        margin: 10px 0;
+    }
+    article {
+        padding: 10px;
+        background-color: lightgray;
+        margin-bottom: 10px;
+    }
+    aside {
+        padding: 10px;
+        background-color: lightblue;
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+    <header>
+        <h1>Website Header</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Section 1</h2>
+        <p>This is the first section of the page.</p>
+    </section>
+
+    <section>
+        <h2>Section 2</h2>
+        <p>This is the second section of the page.</p>
+    </section>
+
+    <article>
+        <h2>Article Title</h2>
+        <p>This is a article.</p>
+    </article>
+
+    <aside>
+        <h3>Sidebar Content</h3>
+        <p>This is related content or a sidebar.</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

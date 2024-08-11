@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Radio</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        color: black;
+    }
+    form {
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid gray;
+        background-color: lightblue;
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+    }
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+    select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+    }
+    input[type="submit"] {
+        background-color: darkblue;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="country1">India</option>
+            <option value="country2">Nepal</option>
+            <option value="country3">Bhutan</option>
+            <option value="country4">Sri Lanka</option>
+            <option value="country5">Bangladesh</option>
+            <!-- Add more countries as needed -->
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
